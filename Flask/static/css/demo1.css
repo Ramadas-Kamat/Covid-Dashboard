@@ -1,5 +1,5 @@
 
-
+/*
 html {
   height: 100%;
   overflow: hidden;
@@ -26,7 +26,7 @@ p {
   color: #333;
 }
 
-.slide {
+/*.slide {
   position: relative;
   padding: 25vh 10%;
   min-height: 100vh;
@@ -34,8 +34,8 @@ p {
   box-sizing: border-box;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
-}
-
+}*/
+/*
 img {
   position: absolute;
   top: 50%;
@@ -52,7 +52,7 @@ img {
 img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-
+/*
 .slide:before {
   content: "";
   position: absolute;
@@ -61,8 +61,8 @@ img:last-of-type {
   left: 0;
   right: 0;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
-}
-
+}*/
+/*
 .title {
   width: 50%;
   padding: 5%;
@@ -70,44 +70,44 @@ img:last-of-type {
   background: rgba(240,230,220, .7);
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
-
+/*
 .slide:nth-child(2n) .title {
   margin-left: 0;
   margin-right: auto;
-}
-
+}*/
+/*
 .slide:nth-child(2n+1) .title {
   margin-left: auto;
   margin-right: 0;
-}
+}*/
 
-.slide, .slide:before {
+/*.slide, .slide:before {
   background: 50% 50% / cover;  
-}
-
+}*/
+/*
 .header {
   text-align: center;
   font-size: 175%;
   color: #fff;
   text-shadow: 0 2px 2px #000;
 }
-
+/*
 #title {
-  background-image: url("https://lorempixel.com/640/480/abstract/6/");
+  /*background-image: url("https://lorempixel.com/640/480/abstract/6/");
   z-index:2;
-}
-
+}*/
+/*
 #title h1 {
  transform: translateZ(.25px) scale(.75);
  transform-origin: 50% 100%;
 
 }
-
-#slide1:before {
+/*
+#slide1, #slide2, #slide3, #slide4 {
   background-image: url("https://lorempixel.com/640/480/abstract/4/");
   transform: translateZ(-1px) scale(2);
-}
-
+}*/
+/*
 #slide2 {
   background-image: url("https://lorempixel.com/640/480/abstract/3/");
   z-index:2;
@@ -121,3 +121,4 @@ img:last-of-type {
 #slide4 {
   background: #222;
 }
+*/

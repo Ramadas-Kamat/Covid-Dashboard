@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">   
     <title>Document</title>
 <style>
@@ -101,27 +93,25 @@ input[type=submit]:hover {
     </style>
     </head>
     <body>
+    
         <ul>
             <li><a class="active" href="/">Home</a></li>
             <li><a href="/sym">Symptoms</a></li>
             <li><a href="/c">Contributors</a></li>
             <li><a href="/country">Country-Wise</a></li>
           </ul>
-    
-
     <div class = "s">
         <center>
             <div class="container">
-                <form action="/" >
+                <form action="covid19info" method="post">
                     <div class="row">
                         <div class ="col-25">
-                            <label for="state">
-                                    <h1>Total Cases: {{ totalcases }}</h1><br>
-                                    <h1>Total Cases: {{ discharged }}</h1><br>
-                                    <h1>Total Cases: {{ deaths }}</h1><br>
-                            </label>
+                            <label for="state">Enter State Name:</label>
                         </div>
-                    <input type="submit" value="Back">
+                    <div class="col-75">
+                        <input type="text" name="state">
+                    </div>
+                    <input type="submit">
                 </form>
             </div>
             </div>
@@ -131,4 +121,3 @@ input[type=submit]:hover {
     </body>
     
 </html>
-    
