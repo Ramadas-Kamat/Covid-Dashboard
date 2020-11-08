@@ -3,18 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #4CAF50;
+    }
+    body{
+        margin-top: 0px 0px 0px 0px;
+        background-color:  #333;
+    }
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+  img{
+    width: 200px;
+    height:200px;
+    display: inline;
+  }
+  h3{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+  }
+  h1{
+    color:white;
+  }
+  body{
+    background-color: #333;
+  }
+</style>
 <body>
+  <ul>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/sym">Symptoms</a></li>
+      <li><a href="/c">Contributors</a></li>
+      <li><a href="/country">Country-Wise</a></li>
+    </ul>
     <div>
         <h1>Contributors</h1>
     </div>
     {% for name in ans %}
     <div>
         <img src="static/images/{{name}}.jpeg" >
-        <br> {{name}}
+        <br><h3>  {{name}}</h3>
     </div>
     {% endfor%}
-    
+
 </body>
 </html>

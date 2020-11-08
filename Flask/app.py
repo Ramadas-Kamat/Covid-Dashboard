@@ -31,7 +31,6 @@ def contributors():
     name7 = 'Disha'
     names = [name1,name2,name3,name4,name5,name6,name7]
     return render_template('contributors.html',ans = names)
-    return render_template("contributors.html")
 
 
 
@@ -55,10 +54,6 @@ def covid19info():
         if i>=len(lst)-1:
             return render_template("invalid.html")
     return render_template("covid1.html", totalcases= totalcases, discharged=discharged, deaths=deaths )
-# @app.route('/about')
-
-# def about():
-#     return render_template("about.html", name1 = 'Shravan')
 
 
 

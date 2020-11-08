@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">   
+    <link rel="stylesheet" href="css.css">
     <title>Document</title>
 <style>
     ul {
@@ -21,11 +21,11 @@
       overflow: hidden;
       background-color: #333;
     }
-    
+
     li {
       float: left;
     }
-    
+
     li a {
       display: block;
       color: white;
@@ -33,11 +33,11 @@
       padding: 14px 16px;
       text-decoration: none;
     }
-    
+
     li a:hover:not(.active) {
       background-color: #111;
     }
-    
+
     .active {
       background-color: #4CAF50;
     }
@@ -107,7 +107,7 @@ input[type=submit]:hover {
             <li><a href="/c">Contributors</a></li>
             <li><a href="/country">Country-Wise</a></li>
           </ul>
-    
+
 
     <div class = "s">
         <center>
@@ -117,8 +117,8 @@ input[type=submit]:hover {
                         <div class ="col-25">
                             <label for="state">
                                     <h1>Total Cases: {{ totalcases }}</h1><br>
-                                    <h1>Total Cases: {{ discharged }}</h1><br>
-                                    <h1>Total Cases: {{ deaths }}</h1><br>
+                                    <h1>Total Discharged: {{ discharged }}</h1><br>
+                                    <h1>Total Deaths: {{ deaths }}</h1><br>
                             </label>
                         </div>
                     <input type="submit" value="Back">
@@ -126,9 +126,8 @@ input[type=submit]:hover {
             </div>
             </div>
         </center>
-        
+
     </div>
     </body>
     
 </html>
-    
